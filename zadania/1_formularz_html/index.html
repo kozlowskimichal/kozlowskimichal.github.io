@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+	
+    <form action="https://formspree.io/kozlowskimichal88@gmail.com" method="POST">
+
+ <!--Wstawienie pola imie-->
+    <label for="firstname">Imię:</label><br>
+    <input type="text" name="firstname" id="firstname"><br>
+        
+<!--Wstawienie pola nazwisko-->
+    <label for="surname">Nazwisko:</label><br>
+    <input type="text" name="surname" id="surname"><br>
+    
+<!--Wstawienie pola Mail-->
+    <label for="email">E-mail:</label><br>
+    <input type="text" name="email" id="email" placeholder="Tutaj wpisz swojego maila"><br>
+    
+<!--Wstawienie pola nr telefonu-->
+    <label for="phonenumber">Nr telefonu:</label><br>
+    <input type="text" name="phonenumber" id="phonenumber"><br>
+
+<!--Miejsce kursu-->
+    <label for="city">Miasto</label>
+    <select name="Miasto" id="city">
+    <option value="Kraków">Kraków</option>
+    <option value="Warszawa">Warszawa</option>
+    <option value="Gdańsk">Gdańsk</option>
+   </select><br><br>
+    
+<!--Płeć-->
+  <p>Płeć:</p>
+  <input type="radio" name="gender" value="Mezczyzna" id="name"><label
+  for="man">Mężczyzna</label> 
+  <input type="radio" name="gender" value="Kobieta" id="name"><label
+  for="man">Kobieta</label>
+  <label><input type="radio" name="gender" value="Nieokreslona">Inna</label>
+  <br>
+  
+<!--Zgoda na dane osobowe-->
+  <label for="approvalconditionstatus">Akceptuje warunki regulaminu:</label><br>
+  <label><input type="checkbox" id="approvalconditionstatus" name="approvalconditionstatus"> Potwierdzam 100% nieznajomość regulaminu. Kto ma czas na czytanie regulaminu</label><br><br>
+  
+<!--Pole wiadomosci-->
+  <label for = "message"> Wiadomość</label>
+  <textarea maxlength="1000" name="message" id="message" placeholder="Napisz tu wiadomość"></textarea><br><br><br><br>
+  
+<!--Wysłanie-->  
+  <input type="submit" value="Wyślij">d
+        
+</form>
+</body>
+</html>
+
+
