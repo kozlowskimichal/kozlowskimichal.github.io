@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
@@ -18,11 +19,11 @@
     
 <!--Wstawienie pola Mail-->
     <label for="email">E-mail:</label><br>
-    <input type="text" name="email" id="email" placeholder="Tutaj wpisz swojego maila"><br>
+    <input type="email" name="email" id="email" placeholder="Tutaj wpisz swojego maila"><br>
     
 <!--Wstawienie pola nr telefonu-->
-    <label for="phonenumber">Nr telefonu:</label><br>
-    <input type="text" name="phonenumber" id="phonenumber"><br>
+    <label for="tel">Nr telefonu:</label><br>
+    <input type="tel" name="tel" id="tel"><br>
 
 <!--Miejsce kursu-->
     <label for="city">Wybierz miasto</label><br>
@@ -30,27 +31,28 @@
     <option value="Kraków">Kraków</option>
     <option value="Warszawa">Warszawa</option>
     <option value="Gdańsk">Gdańsk</option>
-   </select><br><br>
-    
+   </select>
+
 <!--Płeć-->
-  <p>Wybierz płeć:</p><br>
-  <input type="radio" name="gender" value="Mezczyzna" id="name"><label
-  for="man">Mężczyzna</label> 
-  <input type="radio" name="gender" value="Kobieta" id="name"><label
-  for="man">Kobieta</label>
-  <label><input type="radio" name="gender" value="Nieokreslona">Inna</label>
-  <br><br>
+  <p>Wybierz płeć:</p>
+  <input type="radio" id="male" name="gender" value="male" checked>
+  <label for="male">Mężczyzna</label>
+  <br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Kobieta</label>
+  <br>
+  <br>
+  
+<!--Pole wiadomosci-->
+  <label for = "message"> Wiadomość:</label><br>
+  <textarea maxlength="1000" name="message" id="message" placeholder="Napisz tu wiadomość"></textarea><br><br> 
   
 <!--Zgoda na dane osobowe-->
   <label for="approvalconditionstatus">Akceptuje warunki regulaminu:</label><br>
-  <label><input type="checkbox" id="approvalconditionstatus" name="approvalconditionstatus"> Potwierdzam 100% nieznajomość regulaminu. Kto ma czas na czytanie regulaminu</label><br><br>
-  
-<!--Pole wiadomosci-->
-  <label for = "message"> Wiadomość</label>
-  <textarea maxlength="1000" name="message" id="message" placeholder="Napisz tu wiadomość"></textarea><br><br><br><br>
+  <label><input type="checkbox" id="approvalconditionstatus" name="approvalconditionstatus"> Potwierdzam 100% nieznajomość regulaminu. Kto ma czas na czytanie regulaminu.</label><br><br>
   
 <!--Wysłanie-->  
-  <input type="submit" value="Wyślij">
+  <input type="submit" value="submit">
         
 </form>
 </body>
