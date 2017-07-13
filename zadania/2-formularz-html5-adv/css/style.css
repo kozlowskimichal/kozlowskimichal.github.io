@@ -1,1 +1,11 @@
+/* html 5 zadanie drugie */
 
+form {
+    width: 500px;
+}
+#email{
+    width:350px;
+}
+#book{
+    width:300px;
+}
