@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+
+/********** TEAM ***********/
+
+#team .team-member {
+    margin-bottom: 40px;
+    img {
+        max-height: 230px;
+    }
+}
+
+.social-icons a {
+    @include social-icons;
+    &:hover {
+        background-color: #0ed8d6;
+        border: 1px solid #0ed8d6;
+    }
+}
+

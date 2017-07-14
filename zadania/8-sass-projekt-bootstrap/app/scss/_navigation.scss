@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+
+/********** NAVIGATION ***********/
+
+
+#main-nav {
+    background-color: transparent;
+    border: 0;
+    a.navbar-brand {
+        font-size: 2em;
+        font-family: $section-font;
+        text-transform: none;
+    }
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $header-font;
+        transition: all .3s;
+    }
+    a:hover {
+        color: $bg-color;
+    }
+    &.scroll {
+        background-color: rgba(14, 216, 214, 0.85);
+        a {
+            color: #fff;
+        }
+        a:hover {
+            color: #777777;
+        }
+    }
+}
+

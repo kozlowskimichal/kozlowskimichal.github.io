@@ -1,0 +1,66 @@
+/********** GENERALS ***********/
+
+@import "variables";
+@import "mixins";
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    color: $main-color;
+}
+
+h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-font;
+    color: $header-color;
+}
+
+section {
+    padding: 60px 0;
+    header {
+        margin-bottom: 70px;
+    }
+    .section-heading {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    .section-description {
+        font-family: $section-font;
+        color: $main-color;
+    }
+}
+
+a.btn-blue,
+.btn-blue {
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+    font-family: $header-font;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all .3s;
+    padding: 15px 30px;
+}
+
+a.btn-blue:hover,
+.btn-blue:hover {
+    background-color: #fff;
+    border: 1px solid $bg-color;
+    color: $bg-color;
+}

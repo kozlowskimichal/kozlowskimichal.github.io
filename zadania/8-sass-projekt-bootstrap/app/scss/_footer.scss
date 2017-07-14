@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+/********** FOOTER ***********/
+
+#main-footer {
+    padding: 10px 0;
+    nav,
+    .copyright {
+        line-height: 50px;
+        margin: 0;
+    }
+    nav,
+    .social-icons {
+        text-align: center;
+    }
+    ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    nav a {
+        color: $main-color;
+        font-family: $header-font;
+        text-decoration: none;
+        transition: all .3s;
+        &:hover {
+            color: $bg-color;
+        }
+    }
+}
